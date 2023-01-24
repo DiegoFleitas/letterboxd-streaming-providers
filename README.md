@@ -36,6 +36,15 @@ This is a third party extension and is not related to the Letterboxd developer t
 
 For the extension to work, you need to edit `./settings/api.json` and insert your TMDB API key. If you don't have one, you can request one [here](https://www.themoviedb.org/documentation/api).
 
+Note Firefox doesn't support service workers, replace the key with:
+```
+  "background": {
+    "scripts": [
+      "background.js"
+    ]
+  },
+```
+
 ### How to test?
 1. Run `npm install` once at the beginning of your development.
 2. Load the extension in your browser.
