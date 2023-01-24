@@ -11,9 +11,11 @@ CHROMEFILENAME=${EXTENSIONNAME}_Chrome_Opera_Dev_${TAG}
 mkdir -p $DES
 cd extension/
 
+cp manifest.firefox.json manifest.json
 zip -r ${FIREFOXFILENAME}.xpi *
 mv ${FIREFOXFILENAME}.xpi ../$DES/
 
+cp manifest.chrome.json manifest.json
 zip -r ${CHROMEFILENAME}.zip *
 mv ${CHROMEFILENAME}.zip ../$DES/
 
