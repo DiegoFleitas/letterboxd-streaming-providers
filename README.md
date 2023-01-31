@@ -1,5 +1,7 @@
 # Letterboxd Streaming Providers ![Logo](./extension/icons/logo_final_48.png) 
 
+## TODO: fix false positives. Ex: Kid-Thing 2012 being shown as avilable on Netflix Uruguay
+
 ## What?
 This is a extension for common web browsers coded using the WebExtensions API.
 
